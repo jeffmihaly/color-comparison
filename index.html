@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Grading Comparison</title>
+
+  <!-- TwentyTwenty CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zurb/twentytwenty/css/twentytwenty.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 1rem auto 2rem;
+      font-size: 1.5rem;
+      color: #eee;
+    }
+
+    .slider-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+    }
+
+    .twentytwenty-container img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <h1>Color Grading: RAW vs Final</h1>
+
+    <div class="twentytwenty-container">
+      <img src="https://static.wixstatic.com/media/405284_4da5988de8324380a12e12c9d3a2b2be~mv2.jpg" alt="Before" />
+      <img src="https://static.wixstatic.com/media/405284_e710923484aa450798cede9059105f0c~mv2.jpg" alt="After" />
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/zurb/twentytwenty/js/jquery.event.move.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/zurb/twentytwenty/js/jquery.twentytwenty.js"></script>
+  <script>
+    $(function(){
+      $(".twentytwenty-container").twentytwenty();
+    });
+  </script>
+</body>
+</html>
